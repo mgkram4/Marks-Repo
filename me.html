@@ -3,47 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empty Template</title>
+  <title>Mark Garcia - Personal Website</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #FFD700, #FF6347);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h3 {
+      text-align: center;
+    }
+
+    button {
+      background-color: #FF6347;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #FFD700;
+      transform: scale(1.1);
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .header {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .header h3 {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+
+    .mid {
+      margin: 50px auto;
+      text-align: center;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .mid h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    ul li::before {
+      content: "\2713";
+      color: #FFD700;
+      margin-right: 10px;
+    }
+
+    .end {
+      margin: 50px auto;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    .end img {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .end img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.2);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    <div>
+    <!-- header -->
+    <div class="container header">
         <h1>Hello my name is Mark Garcia</h1>
         <h3>I am Masters Student with a love for Technology!</h3>
         <button>About Me</button>
     </div>
 
-    <div>
-        <h1>A bit about my Journy</h1>
-        <p>During the past 5 years I have found a great appreaction for powerful Technology that allows me to live a effienct and relible lyfestyle. Doing so I have learn computer topics that over Web Development, Mobile Apps, Machine Learning, Cloud, and Data Science. </p>
-
-        <h1>My Technologies<h1>
-            <ul>Html</ul>
-            <ul>CSS</ul>
-            <ul>Vs Code</ul>
-            <ul>Github</ul>
-            <ul>Github Copilot</ul>
-            <ul>ChaptGPT</ul>
-            <ul>Midjourney</ul>
-            <ul>Claude</ul>
+    <!-- mid -->
+    <div class="container mid">
+        <h1>A Bit About My Journey</h1>
+        <p>During the past 5 years, I have found a great appreciation for powerful technology that allows me to live an efficient and reliable lifestyle. Along the way, I have learned computer topics that cover Web Development, Mobile Apps, Machine Learning, Cloud, and Data Science.</p>
+        <h1>My Technologies</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>VS Code</li>
+            <li>GitHub</li>
+            <li>GitHub Copilot</li>
+            <li>ChatGPT</li>
+            <li>Midjourney</li>
+            <li>Claude</li>
+        </ul>
     </div>
 
-    <div> 
-    <h1> My Life outside Proggraming</h1>
-    <p>During my freetime I love to play video games , specficlyl i play League of Legmeds, Pokemon TCCP , and play fortnite</p>
-    <p>I am a father of two cats , Tom and Lucy</p>
-    <p>I also love sports my favorite being Baskbetall , Football, and Golf</p>    
-    </div>
+    <!-- end -->
+    <div class="container end"> 
+        <h1>My Life Outside Programming</h1>
+        <p>During my free time, I love to play video games, specifically I play League of Legends, Pokemon TCG, and Fortnite.</p>
+        <p>I am a father of two cats, Tom and Lucy.</p>
+        <p>I also love sports, my favorite being Basketball, Football, and Golf.</p>
 
-    <div>
-        <h1>Heres My Work!</h1>
-
-        <h3>
+        <h1>Here's My Work!</h1>
+        <div>
             <h1>Title</h1>
-            <h3>Desciption</h3>
-            <img sr="">
-            <a href="" > Demo here</a>
+            <h3>Description</h3>
+            <img src="/img2.png" alt="Project Image" width="200" height="200">
+            <br>
+            <a href="#" style="color: #FFD700; text-decoration: none; font-weight: bold;">Demo here</a>
         </div>
-
     </div>
+
+    <footer>
+      <p>Copyright &copy; 2025 Mark Garcia. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
